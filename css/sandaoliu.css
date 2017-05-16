@@ -1,0 +1,39 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+.logo img {
+	width: 100%;
+	padding-top: 0.8rem;
+}
+.logo p {
+	font-size: 1.6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: justify;
+	text-indent: 3.2rem;
+}
+.fixs {
+	height: 5rem;
+	width: 100%;
+	background: white;
+	position: fixed;
+	z-index: 999;
+}
+.logo {
+	padding-top: 5rem;
+}
+.fixs a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.6rem;
+	display: block;
+	line-height: 5rem;
+}
+.fixs {
+	text-align: center;
+}

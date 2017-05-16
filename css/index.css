@@ -1,0 +1,175 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: rgb(241, 241, 241);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+
+/* 清除浮 动*/
+.fix {
+	*zoom: 1;
+}
+.fix:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+.top {
+	height: 5rem;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: orange;
+	z-index: 999;
+}
+.lunBo {
+	display: -webkit-flex;
+	display: flex;
+}
+.icon img {
+	float: left;
+	width: 20%;
+}
+
+.scroll {
+	height: 3rem;
+	line-height: 3rem;
+	background: deepskyblue;
+	font-size: 1.6rem;
+	padding-left: 1rem;
+	background: white;
+}
+.scroll a {
+	color: black;
+}
+.tables {
+	border-bottom: 0.2rem solid rgb(241, 241, 241);
+	background: white;
+}
+
+.boxa {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+}
+
+.fonta {
+	font-size: 1.8rem;
+	color: #f08cbd
+}
+
+.fonta,
+.fontb {
+	font-weight: 70rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+}
+
+.fontb {
+	font-size: 1.2rem;
+	color: #337ab7;
+	margin-bottom: 1rem;
+}
+
+.tables ,.scroll {
+	width: 97%;
+	box-sizing: border-box;
+	
+}
+.zh {
+	margin: 1rem auto;
+}
+a {
+	text-decoration: none;
+}
+.boxa a {
+	width: 50%;
+	border-bottom: 0.2rem solid rgb(241, 241, 241);
+	border-left: 0.2rem solid rgb(241, 241, 241);
+	background-size: 6rem;
+	background-position: 100%;
+}
+.boxa-img1 {
+	background: url(../img/sanDaoliu.png) no-repeat;
+}
+.boxa-img2 {
+	background: url(../img/qiaoba.png) no-repeat;
+}
+.boxa-img3 {
+	background: url(../img/fanliji.png) no-repeat;
+}
+.boxa-img4  {
+	background: url(../img/aisi.png) no-repeat;
+}
+.swiper-container {
+	/*height: 10rem;*/
+}
+.logoimg img , .foot img {
+	width: 100%;
+}
+.swiper-pagination-bullet-active {
+	background: #fff !important;
+}
+.tablefl,.foot {
+	margin-top: 1rem;
+}
+.left {
+	height: 14rem;
+	width: 49%;
+	float: left;
+	background: url(../img/luoG.jpg) no-repeat 90%;
+	background-size: 10rem;
+	border-right: 0.2rem solid rgb(241, 241, 241);
+}
+.tablefl {
+	font-size: 1.6rem;
+	color: rgb(246,146,35);
+	background: white;
+}
+.right,.right1 {
+	height: 7rem;
+	width: 50%;
+	float: right;
+}
+.right {
+	background: url(../img/lufeimaozi.jpg) no-repeat 90%;
+	background-size: 5rem;
+	border-bottom: 0.2rem solid rgb(241, 241, 241);
+}
+.right1 {
+	background: url(../img/qiaobamaozi.jpg) no-repeat 90%;
+	background-size: 5rem;
+}
+.tablefl p {
+	padding-top: 0.5rem;
+}
+.left p {
+	padding-left: 0.5rem;
+}
+.right p , .right1 p {
+	padding-left: 1rem;
+}
+.more,.tablefl {
+	width: 97%;
+	margin: 0 auto;
+}
+.more {
+	height: 3rem;
+	background: white;
+	margin-top: 0.5rem;
+}
+.more a {
+	color: black;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	float: right;
+	padding-right: 1rem;
+}

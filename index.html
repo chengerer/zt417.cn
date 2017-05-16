@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="Swiper-3.4.1/dist/css/swiper.min.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>海贼王首页</title>
+	</head>
+
+	<body>
+		<div class="all">
+			<!-- fix -->
+			<!--<div class="top"></div>-->
+			<!-- 轮播图 -->
+			<div class="lunBo">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<img class="swiper-slide" src="img/timg.jpg" />
+						<img class="swiper-slide" src="img/timg1.jpg" />
+						<img class="swiper-slide" src="img/timg2.jpg" />
+						<img class="swiper-slide" src="img/timg3.jpg" />
+						<img class="swiper-slide" src="img/timg4.jpg" />
+						<img class="swiper-slide" src="img/timg5.jpg" />
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<!-- 图标 -->
+			<div class="icon fix">
+				<div class="zh_x">
+					<a href="nami.html"><img src="img/anNa.png" /></a>
+				</div>
+				<div class="zh_x">
+					<a href="buluke.html"><img src="img/buLunke.jpg" /></a>
+				</div>
+				<div class="zh_x">
+					<img src="img/biaoZhi.png" />
+				</div>
+				<div class="zh_x">
+					<a href="lufei.html"><img src="img/lunFei.png" /></a>
+				</div>
+				<div class="zh_x">
+					<a href="luobin.html"><img src="img/luoBlin.png" /></a>
+				</div>
+			</div>
+
+			<!-- 滚动内容 -->
+			<div class="scroll zh">
+				<marquee scrollamount="1.5" direction="up" height="25rem">
+					<ul>
+						<li>
+							<a href="">欢迎加入我们海贼世界1</a>
+						</li>
+						<li>
+							<a href="">欢迎加入我们海贼世界2</a>
+						</li>
+						<li>
+							<a href="">欢迎加入我们海贼世界3</a>
+						</li>
+						<li>
+							<a href="">欢迎加入我们海贼世界4</a>
+						</li>
+						<li>
+							<a href="">欢迎加入我们海贼世界5</a>
+						</li>
+						<li>
+							<a href="">欢迎加入我们海贼世界6</a>
+						</li>
+					</ul>
+				</marquee>
+			</div>
+
+			<!-- 表格框 -->
+			<div class="tables zh">
+				<div class="boxa">
+					<a class="boxa-img1" href="sandaoliu.html">
+						<p class="fonta">三刀流</p>
+						<p class="fontb">欢迎加入我们</p>
+					</a>
+					<a class="boxa-img2" href="qiaoba.html">
+						<p class="fonta">我不是庸医</p>
+						<p class="fontb">欢迎加入我们</p>
+					</a>
+				</div>
+				<div class="boxa">
+					<a class="boxa-img3" href="fanlanqi.html">
+						<p class="fonta">新机器诞生</p>
+						<p class="fontb">欢迎加入我们</p>
+					</a>
+					<a class="boxa-img4" href="aisi.html">
+						<p class="fonta">艾斯回来了</p>
+						<p class="fontb">欢迎加入我们</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- logo -->
+		<div class="logoimg">
+			<img src="img/logo.jpg" />
+		</div>
+
+		<!-- float布局 -->
+		<div class="tablefl fix">
+			<div class="left">
+				<p>海贼王里的帽子含义</p>
+			</div>
+			<div class="right">
+				<p>路飞帽子</p>
+			</div>
+			<div class="right1">
+				<p>乔巴帽子</p>
+			</div>
+		</div>
+		<div class="more">
+			<a href="list.html">查看更多 >></a>
+		</div>
+		<!-- foot布局 -->
+		<div class="foot">
+			<img src="img/foot_1.jpg"/>
+		</div>
+		
+		
+		<script src="Swiper-3.4.1/dist/js/swiper.min.js"></script>
+		<script type="text/javascript">
+			//轮播图
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 2000, //可选选项，自动滑动
+				pagination: '.swiper-pagination',
+				loop: true
+			});
+		</script>
+	</body>
+
+</html>
