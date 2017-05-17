@@ -26,13 +26,11 @@ a {
 	text-decoration: none;
 }
 .left {
-	width: 30%;
 	float: left;
 	/*background: orange;*/
 	
 }
 .right {
-	width: 70%;
 	float: right;
 }
 .left ul li {
@@ -56,4 +54,11 @@ a {
 }
 .left ,.right {
 	padding-top: 5rem;
+}
+.contain {
+	display: -webkit-flex;
+	display: flex;
+}
+.left {
+	flex: 0 0 10rem;
 }
