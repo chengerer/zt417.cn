@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ad</title>
+		<style type="text/css">
+			#wrapper {
+				display: flex;
+				overflow: hidden;
+			}
+			
+			.item {
+				position: relative;
+				height: 200px;
+				flex: 200px;
+				flex-wrap: wrap;
+				overflow: hidden;
+				transition: transform .3s;
+			}
+			
+			.item:hover {
+				box-shadow: 0 2px 8px -2px rgba(0 ,0 , 0, .2);
+				
+				transform: translateY(-10px);
+			}
+			
+			.item:after {
+				position: absolute;
+				content: "";
+				width: 0;
+				height: 0;
+				
+				bottom: 0;
+				
+				border-left: 200px solid transparent;
+				border-bottom: 40px solid #fff;
+			}
+			
+			.y {
+				background: yellow;
+			}
+			
+			.s {
+				background: salmon;
+			}
+			
+			.f {
+				background: forestgreen;
+			}
+			
+			.v {
+				background: violet;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<a class="item y"></a>
+			<a class="item s"></a>
+			<a class="item f"></a>
+			<a class="item y"></a>
+			<a class="item v"></a>
+			<a class="item f"></a>
+		</div>
+	</body>
+</html>
