@@ -38,10 +38,12 @@
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			$("a").on('click',function(){
+			$("a:first").css('color','orange');
+			$("a").on('mouseenter',function(){
 				var idx = $(this).index('a');
+				$("a").eq(idx).css('color','orange');
+				$("a").not($('a').eq(idx).css('color','orange')).css('color','black')
 				$(".info p").eq(idx).show();
-				alert($(".info p").eq(idx))
 			});
 		});
 	</script>
