@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+</head>
+<body>
+	<style type="text/css">
+		a {
+			font-size: 20px;
+			margin-left: 10px;
+		}
+		.info p {
+			display: none;
+		}
+		.info p:first-child {
+			display: block;
+		}
+		.info {
+			height: 110px;
+			overflow: hidden;
+			background: orange;
+			width: 500px;
+			text-align: justify;
+			padding: 10px;
+		}
+	</style>
+	  <a>html</a>
+	  <a>css</a>
+	  <a>javascript</a>
+	  <div class="info">
+	  	<p id="p1">html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!</p>
+	  	<p id="p2">css is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!</p>
+	  	<p id="p3">javascript is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!html is very good!</p>
+	  </div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("a").on('click',function(){
+				var idx = $(this).index('a');
+				$(".info p").eq(idx).show();
+				alert($(".info p").eq(idx))
+			});
+		});
+	</script>
+</body>
+</html>
