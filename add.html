@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+	<body>
+		<p>我喜想买的零食：</p>
+		<div class="hlc">
+			<input type="checkbox" name="" id="" value="" />饼干<br />
+			<input type="checkbox" name="" id="" value="" />牛奶<br />
+			<input type="checkbox" name="" id="" value="" />干果<br />
+			<input type="checkbox" name="" id="" value="" />酸奶<br />
+			<input type="checkbox" name="" id="" value="" />可乐<br />
+			<input type="checkbox" name="" id="" value="" />雪碧<br />
+			<input type="checkbox" name="" id="" value="" />冰淇淋<br /><br />
+		</div>
+
+		<div class="all">
+			<input type="checkbox" name="" id="selected" value="" onclick="myfunction()" />全选
+			<input type="checkbox" name="" id="no-selceted" value="" />反选
+		</div>
+
+		<script type="text/javascript">
+			function myfunction(){
+				$("#hlc > :checkbox").attr('checked',true)
+			};
+		</script>
+	</body>
+
+</html>
