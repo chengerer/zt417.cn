@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>表单验证</title>
+	<style type="text/css">
+		span {
+			margin-left: 10px;
+			color: red;
+			display: none;
+		}
+	</style>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+	<p>请输入用户名：</p>
+	<p><input class="auth" type="text" id="" value="" /><span>用户名不少于6个字符！</span></p>
+	<p>请输入密码：</p>
+	<p><input class="auth" type="password" name="password" /><span class="two">密码不少于8位数！</span></p>
+	<p>请确认密码：</p>
+	<p><input class="auth" type="password" name="repassword" /><span>两次输入密码不一致！</span></p>
+	<input type="submit" id="ok" name="" />
+	
+	
+	
+	<script type="text/javascript">
+		$(function(){
+			$(".auth").data('name',0);
+			//用户名输入
+			$("input[type = text]").on('blur',function(){
+				var val = $(this).val();
+				if (val.length<6) {
+					$(this).data('name',1);
+					$("span:first").show();
+				} else{
+					$(this).data('name',0);
+					$("span:first").hide();
+				}
+			});
+			//密码输入
+			$("input[name = password]").on('blur',function(){
+				var val = $(this).val();
+				if (val.length < 8) {
+					$(this).data('name',1);
+					$(".two").show();
+				} else{
+					$(this).data('name',0);
+					$(".two").hide();
+				}
+			});
+			//再次输入密码确认是否一致
+			$("input[name = repassword]").on('blur',function(){
+				var val1 = $("input[name = password]").val();
+				var val2 = $(this).val();
+				if (val1 == val2) {
+					$(this).data('name',0);
+					$("span:last").hide();
+				} else{
+					$(this).data('name',1);
+					$("span:last").show();
+				}
+			});
+			//提交事件
+			$("input[type = submit]").on('click',function(){
+				var tot = 0;
+				$(".auth").on('blur');
+				$(".auth").each(function(){
+					tot += $(this).data('name');
+					alert(tot)
+//					if (tot = 3) {
+//						return true;
+//					}
+				});
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
