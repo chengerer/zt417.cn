@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<body>
+		<p>请选择你喜欢的动物：</p>
+		<input type="checkbox" name="" id="" value=""/><label for="">dog</label><br />
+		<input type="checkbox" name="" id="" value=""/><label for="">cat</label><br />
+		<input type="checkbox" name="" id="" value=""/><label for="">monkey</label><br />
+		<input type="checkbox" name="" id="" value=""/><label for="">ant</label><br />
+		<input type="checkbox" name="" id="" value=""/><label for="">pig</label><br />
+		<input type="checkbox" name="" id="" value=""/><label for="">frog</label><br />
+		<input type="checkbox" name="" id="" value=""/><label for="">elephant</label><br />
+		<!--
+        	描述：全选和反选
+        -->
+		<button class="all">全选</button>
+		<button class="noall">全不选</button>
+		<button class="invert">反选</button>
+		
+		<script type="text/javascript">
+			$(function(){
+				//全选
+				$(".all").on('click',function(){
+					$("input[name]").attr('checked',true);
+				});
+				//全不选
+				$(".noall").on('click',function(){
+					$("input[name]").attr('ckecked',false);
+				});
+				//反选
+				$(".invert").on('click',function(){
+					$(":checkbox[name]").each(function(){
+						this.checked = !this.checked;
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
